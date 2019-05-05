@@ -1,7 +1,7 @@
 require 'mechanize'
 require 'pry'
 
-class BookSearch
+class BookStatus
   attr_reader :page, :form
 
   def initialize
