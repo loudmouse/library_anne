@@ -3,7 +3,6 @@ require 'pry'
 
 # this will get the list of book shelves for a user given his user_id
 class Shelves
-  USER_ID = 39558034
   attr_reader :shelves, :numbered_shelves, :shelf
   def initialize
     # need to get this programmatically
