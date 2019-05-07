@@ -9,7 +9,7 @@ class ReadingList
     )
   end
 
-  def get_list(user_id = 39558034, shelf_name = 'to-read', books_per_page = 200)
+  def get_list(user_id = ENV['GOODREADS_USER_ID'], shelf_name = 'to-read', books_per_page = 200)
     connection.shelf(user_id, shelf_name, per_page: books_per_page)
   end
 end

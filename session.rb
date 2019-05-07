@@ -32,7 +32,7 @@ class Session
   end
 
   def welcome
-    puts "You\'ll pick a library branch and book and Librarian tells you if it's available."
+    puts "Let Library Anne help you find your next book."
   end
 
   def select_book
