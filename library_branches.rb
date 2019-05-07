@@ -1,17 +1,14 @@
+require_relative "./locations"
 require 'mechanize'
 require 'pry'
 
 class LibraryBranches
+  include Locations
   attr_reader :library_branches
   attr_accessor :branch
 
   def initialize
-    @library_branches = {
-      0 => "West Loop",
-      1 => "Wicker Park",
-      2 => "Albany Park",
-      3 => "Harold Washington Library Center"
-    }
+    @library_branches = LIBRARY_BRANCHES
   end
 
   def select_branch
